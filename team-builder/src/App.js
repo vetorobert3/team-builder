@@ -1,18 +1,14 @@
 import React, { useState } from 'react';
-import logo from './logo.svg';
+import axios from 'axios';
+import Form from './Components/Form.js';       
+
 import './App.css';
 
 function App() {
 
-  const [name, setName] = useState();
-
   return (
     <div className="App">
-      <form>
-        <label>
-          name: <input />
-        </label>
-      </form>
+      <Form />
     </div>
   );
 }
